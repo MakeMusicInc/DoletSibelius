@@ -12,8 +12,8 @@
 
 <blockquote>
 	<h1>Dolet<sup><font size="-1">®</font></sup> 8 for Sibelius Release Notes</h1>
-	<h2>Version 8.0</h2>
-	<p>January 2022</p>
+	<h2>Version 8.1</h2>
+	<p>May 2022</p>
 	<h3><a href="#Installation">Installation</a> - <a href="#Using">Using Dolet 
 	for Sibelius</a> - 
 <a href="#New">What&#39;s New</a> -
@@ -94,7 +94,24 @@
 		Layout menu and click on the Freeze Magnetic Layout Positions item.</li>
 	</ul></p>
 	<h2><a name="New"></a>What&#39;s New</h2>
-	<p>Version 8.0 adds MusicXML 4.0 support, including MusicXML 3.1 features that 
+	<p>Version 8.1 includes the following new features and fixes:
+	<ul>
+		<li>Headers and footers are now exported. As with other page-aligned text,
+		positions are based on common default house styles since plug-ins cannot
+		access text style definitions.</li>
+		<li>The page number wildcard is now exported. (Regular Sibelius page numbers
+		are still not exported due to ManuScript limitations.)</li>
+		<li>The year of composition wildcard is now exported.</li>
+		<li>The dynamic markings ffp, ffmp, fmp, fpp, msfz, and msfzp are now exported
+		as dynamics.</li>
+		<li>Standalone symbols for notes, noteheads, rests, augmentation dots,
+		bar repeats, barlines, clefs, flags, and octaves are now exported.</li>
+		<li>The Sibelius formatting string for turning off a music text font while
+		retaining other aspects of string formatting is now exported.</li>
+		<li>Page-aligned text with a repeated mix of words and dynamic symbols no
+		longer exports with invalid MusicXML that other applications cannot open.</li>
+	</ul>
+	<p>Version 8.0 added MusicXML 4.0 support, including MusicXML 3.1 features that 
 	were not available in Dolet 6 for Sibelius. This includes the following new 
 	features:</p>
 	<ul>
@@ -115,7 +132,7 @@
 		<li>Flats in part name credits now export with a flat symbol rather than
 		a lowercase b.</li>
 	</ul>
-	<p>Version 8.0 adds support for ManuScript changes made to Sibelius
+	<p>Version 8.0 added support for ManuScript changes made to Sibelius
 	over the past five years. This includes the following new features:
 	<ul>
 		<li>Cross-staff notation is exported starting with Sibelius 2021.9.</li>
@@ -133,7 +150,7 @@
 		<li>The version number is exported correctly from the new numbering 
 		systems introduced in Sibelius 2018 and Sibelius 2020.</li>
 	</ul>
-	<p>Version 8.0 also includes the following features and fixes:</p>
+	<p>Version 8.0 also included the following features and fixes:</p>
 	<ul>
 		<li>MusicXML files for each dynamic part can be exported all at once
 		using the new Export Parts to MusicXML menu item.</li>
