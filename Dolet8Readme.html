@@ -1,0 +1,210 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Dolet 8 for Sibelius Release Notes</title>
+</head>
+
+<body>
+
+<blockquote>
+	<h1>Dolet<sup><font size="-1">®</font></sup> 8 for Sibelius Release Notes</h1>
+	<h2>Version 8.0</h2>
+	<p>January 2022</p>
+	<h3><a href="#Installation">Installation</a> - <a href="#Using">Using Dolet 
+	for Sibelius</a> - 
+<a href="#New">What&#39;s New</a> -
+<a href="#Limits">Translation Limits</a></h3><hr>
+	<h2><a name="Installation"></a>Installation</h2>
+	<p>Dolet 8 for Sibelius only works with Sibelius Ultimate 2019.5 and later. To export
+	MusicXML files from Sibelius 5.1 through Sibelius Ultimate 2019.4.1, you will need to use 
+	the Dolet 6 for Sibelius plug-in.</p>
+	<p>If you are upgrading from an earlier version of Dolet for Sibelius, we 
+	recommend that you uninstall the earlier version first to avoid confusion 
+	between different versions of the Dolet plug-in. On Windows, uninstall using 
+	the Control Panel. On the Mac, uninstall by removing the MusicXML folder 
+	from your Sibelius plug-ins folder. This is usually the Library/Application 
+	Support/Avid/Sibelius/Plugins folder within your home directory</p>
+	<p>To install on Windows, first quit Sibelius, then run the 
+	Dolet80Sibelius.msi installer program. The installation location is where 
+	this readme file and your software license are installed. The actual 
+	plug-ins are automatically installed in your folder for user copies of 
+	Sibelius plug-ins.</p>
+	<p>To install on Mac, first quit out of Sibelius. In the Dolet 8 for Sibelius 
+	Finder window, drag the Plugins folder into the Sibelius folder. When you do 
+	this, you might see a dialog appear in two different situations:</p>
+	<ul>
+		<li>If you already have user-edited or user-installed plug-ins for 
+		Sibelius, the dialog will ask &quot;A folder named &#39;Plugins&#39; already exists 
+		in this location. Do you want to merge or replace it with the one you&#39;re 
+		copying?&quot; Click the Merge button to install the latest version of the 
+		Dolet for Sibelius plug-in and keep your other user-edited or 
+		user-installed plug-ins.</li>
+		<li>If you have already installed an earlier version of the Dolet 
+		plug-in, but no other user-edited or user-installed plugins, the dialog 
+		will ask &quot;An older folder named &#39;Plugins&#39; already exists in this 
+		location. Do you want to replace it with the newer one you&#39;re copying?&quot; 
+		Click the Replace button to install the latest version of the Dolet for 
+		Sibelius plug-in.</li>
+	</ul>
+	<p>On some Mac systems, you might need to right-click on the Sibelius 
+	folder, choose &quot;Show Original&quot;, and then drag the Plugins folder into that 
+	original folder. Either way, you are copying the Plugins folder into the 
+	~/Library/Application Support/Avid/Sibelius folder.</p>
+	<h2><a name="Using"></a>Using Dolet for Sibelius</h2>
+	<p>Dolet<sup><font size="-1">®</font></sup> software serves as a translator 
+	between music programs. These translations are done using the MusicXML file 
+	format. Dolet 8 for Sibelius writes MusicXML files, allowing you to exchange 
+	music between Sibelius and other programs that can read MusicXML files such
+	as Finale and SmartMusic. You can see a full list at
+	<a href="https://www.musicxml.com/software">https://www.musicxml.com/software</a>. 
+	Dolet 8 for Sibelius saves files in the MusicXML 4.0 format, which allows 
+	more notation information to be transferred between applications.</p>
+	<p>To save a Sibelius score as a MusicXML file, go to the Plug-ins menu and 
+	select the MusicXML submenu. Then select the &quot;Export MusicXML&quot; item. You 
+	will then see a standard save dialog box asking where to save the XML file. 
+	By default, this will be the same as your existing Sibelius file name, with 
+	&quot;.musicxml&quot; used instead of &quot;.sib&quot; for the file extension.</p>
+	<p>You may translate an entire folder of Sibelius files to MusicXML format. 
+	This batch routine will overwrite any MusicXML files with the same name that are 
+	currently in that folder. Use the &quot;Translate Folder of Scores to 
+	MusicXML&quot; menu item to save MusicXML files from your Sibelius files.</p>
+	<p>You may translate all the dynamic parts in a Sibelius file to MusicXML format. 
+	Use the &quot;Export Parts to MusicXML&quot; menu item to save MusicXML files
+	for each dynamic part. This will export MusicXML part files into the same folder
+	as the currently open score, including the part number and name in each file name.
+	This will overwrite any MusicXML files with the same name that are currently in
+	that folder.</p>
+	<p>Some applications that only support older versions of the MusicXML format 
+	may give you error messages about unrecognized elements or attributes when 
+	importing the MusicXML 4.0 file you have exported from Sibelius. You can 
+	ignore these messages and the file will continue to import correctly. 
+	However, the import will not include the new MusicXML 4.0 features listed 
+	below.</p>
+	<p>For best results, do the following before exporting a score:
+	<ul>
+		<li>If you are using magnetic layout, freeze the 
+		magnetic layout positions before exporting your score. Otherwise the 
+		score will export with the positions that objects would have if magnetic 
+		layout were turned off. To freeze the positions, first select everything 
+		in the score using Ctrl-A on Windows or Command-A on Mac. Then go to the 
+		Layout menu and click on the Freeze Magnetic Layout Positions item.</li>
+	</ul></p>
+	<h2><a name="New"></a>What&#39;s New</h2>
+	<p>Version 8.0 adds MusicXML 4.0 support, including MusicXML 3.1 features that 
+	were not available in Dolet 6 for Sibelius. This includes the following new 
+	features:</p>
+	<ul>
+		<li>Export and batch export use the .musicxml file extension instead of the
+		.xml file extension.</li>
+		<li>Concert scores now export transposition information, including alternate
+		clefs for transposed parts.</li>
+		<li>Many more standard symbols are now exported.</li>
+		<li>Musical symbols in a music text font that are mixed together with text
+		are now exported.</li>
+		<li>The n, sfzp, and pf dynamics are now exported.</li>
+		<li>Repeated measure numbers are now exported correctly.</li>
+		<li>L.V. ties now export as MusicXML let-ring ties, whether entered as 
+		native Sibelius L.V. ties or using L.V. symbols.</li>
+		<li>Buzz rolls are now exported more accurately.</li>
+		<li>System directions exports with the system attribute, providing better
+		results when creating parts from an imported score.</li>
+		<li>Flats in part name credits now export with a flat symbol rather than
+		a lowercase b.</li>
+	</ul>
+	<p>Version 8.0 adds support for ManuScript changes made to Sibelius
+	over the past five years. This includes the following new features:
+	<ul>
+		<li>Cross-staff notation is exported starting with Sibelius 2021.9.</li>
+		<li>Scores with annotation items are now exported correctly.</li>
+		<li>Batch export always exports the score, no matter what part was open 
+		when the file was last saved.</li>
+		<li>Batch export no longer prompts for saving after each file.</li>
+		<li>Files are now exported in sorted order during batch export on Mac.</li>
+		<li>Tied Into ties and tie line styles added in Sibelius 2020.1 are now 
+		exported.</li>
+		<li>Initial font families for text now export for text without font family
+		changes.</li>
+		<li>Initial font sizes now export for text without font size changes.</li>
+		<li>The default words font is now exported more accurately.</li>
+		<li>The version number is exported correctly from the new numbering 
+		systems introduced in Sibelius 2018 and Sibelius 2020.</li>
+	</ul>
+	<p>Version 8.0 also includes the following features and fixes:</p>
+	<ul>
+		<li>MusicXML files for each dynamic part can be exported all at once
+		using the new Export Parts to MusicXML menu item.</li>
+		<li>Page-aligned text is now exported except for headers and footers.
+		Positions are based on common default house styles, since plug-ins cannot
+		access text style definitions.</li>
+		<li>Text that mixes dynamics with words now exports correctly.</li>
+		<li>Grace notes are now exported with correct beaming.</li>
+		<li>Hidden accidentals now export correctly.</li>
+		<li>Metronome marks with numeric ranges now export correctly.</li>
+		<li>Concert scores with octave-transposing parts such as guitar and piccolo now
+		export correctly.</li>
+		<li>Expressions are now exported as italic text unless overridden in a
+		specific case.</li>
+		<li>Text repeats are now exported as bold text unless overridden in a
+		specific case.</li>
+		<li>Text repeats at the end of a bar are now exported as right-justified.</li> 
+		<li>Font size changes within text are now exported.</li>
+		<li>The part name, opus number, and composer dates wildcards are now
+		exported.</li>
+		<li>Plain system text, musical structure text, and timecode text are now
+		exported.</li>
+		<li>Text on blank pages at the end of a score is now exported.</li>
+		<li>Direction placement is now exported for directions that are clearly above
+		or below a staff.</li>
+		<li>The xml:space attribute is now exported for text that contains line
+		breaks.</li>
+		<li>Text preceding metronome marks is now exported more accurately.</li>
+		<li>Metronome marks followed by text are now exported correctly.</li>
+		<li>Text repeats now export with playback in cases with simple repeat
+		structures.</li>
+		<li>Fingerings on notes following grace notes are exported more accurately.</li>
+		<li>Multi-line fingerings are now exported as fingerings rather than text.</li>
+		<li>Hidden time signatures are now exported as hidden.</li>
+		<li>Additive time signatures are now exported.</li>
+		<li>Duplicate slurs starting on single notes are no longer exported.</li>
+		<li>Dynamics mfp and sffzpp are now exported as dynamics rather than text.</li>
+		<li>Dynamics in the Maestro font are now exported correctly.</li>
+		<li>More symbols are exported from Sibelius chord fonts, including the
+		different ALT symbols.</li>
+		<li>Parts that have an ossia staff and octave-transposing clefs now export
+		correctly.</li>
+		<li>Slurs on beamed grace notes at the end of a measure now export
+		correctly.</li> 
+		<li>Metronome tempo playback is now exported from ranges like 100-120, using
+		the midpoint of the tempo range.</li>
+		<li>The MusicXML group is now exported, indicating whether a file is a score
+		or a part.</li>
+		<li>Instruments defined with an A# transposition now export the key signature
+		correctly.</li>
+		<li>Export no longer hangs in some rare cases with complex tuplets.</li>
+	</ul>
+	<h2><a name="Limits"></a>Translation Limits</h2>
+	<p>Any type of translation has limits. Things expressed in one language 
+	sometimes cannot be expressed the same way in another language. Sometimes 
+	the translator does not yet understand all the idioms and vocabulary in both 
+	languages. Dolet and MusicXML provide much greater music notation accuracy 
+	than MIDI translations, but both types of limits apply to this software.</p>
+	<p>In particular, Dolet 8 for Sibelius is limited to the musical information 
+	provided in ManuScript. Dolet does not have access to custom articulations, 
+	user-defined lines and symbols, stem length, and most house style formatting 
+	information. Guitar bends are exported as slurs.</p>
+	<p>When Dolet 8 for Sibelius cannot export some notation accurately, it logs 
+	the problem in the MusicXML file using an XML processing instruction. These 
+	processing instructions start with &quot;&lt;?DoletSibelius&quot;. You can search for 
+	these processing instructions in the MusicXML file after export to find 
+	known translation limits that were encountered while exporting your Sibelius 
+	file.</p>
+	<p><font size="2">Copyright © 2022 MakeMusic, Inc.</font></p>
+</blockquote>
+
+</body>
+
+</html>
